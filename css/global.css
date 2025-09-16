@@ -9,6 +9,7 @@
 .container {
   margin: 0 auto;
   width: 1280px;
+  background: #f5f5f5;
 }
 body {
   font-family: "Poppins";
@@ -31,6 +32,21 @@ h2 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.title-1 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 56px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #52483e;
+}
+.text-1 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #8b8782;
 }
 .header {
 }

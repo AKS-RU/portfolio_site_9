@@ -10,15 +10,76 @@
 }
 .header__tittle h1 {
   position: absolute;
-  top: 37%;
+  top: 34%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
 }
 .header__tittle h2 {
   position: absolute;
-  top: 60%;
+  top: 55%;
   left: 50%;
   transform: translateX(-50%);
+  white-space: nowrap;
   z-index: 1;
+}
+/* style */
+.style .title-1 {
+  padding-top: 97px;
+}
+.style .text-1 {
+  padding-top: 14px;
+}
+.style__slider {
+  padding-top: 11px;
+  width: 1280px;
+  height: 774px;
+}
+.swiper {
+  width: 100%;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 660px;
+  height: 774px;
+  margin: 0 40px;
+  transition: filter 0.3s ease; /* плавное включение/выключение blur */
+  filter: blur(10px);
+}
+.swiper-slide-active {
+  filter: blur(0);
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.swiper-pagination {
+  margin-top: 20px;
+}
+.swiper-pagination-bullet {
+  margin: 0 20px !important;
+  width: 60px; /* было 8px — увеличиваем */
+  height: 60px; /* круглый вид */
+  border: 1px solid;
+  opacity: 0.5; /* прозрачность неактивной */
+  transition: all 0.3s ease;
+}
+/* Первая точка — зелёная */
+.swiper-pagination-bullet:nth-child(1) {
+  background: #d8b74b; /* зелёный */
+}
+
+/* Вторая точка — жёлтая */
+.swiper-pagination-bullet:nth-child(2) {
+  background: #94915b; /* жёлтый */
+}
+
+/* Третья точка — красная */
+.swiper-pagination-bullet:nth-child(3) {
+  background: #883d39; /* красный */
+}
+.style__slider .text-1 {
+  padding-top: 16px;
 }
