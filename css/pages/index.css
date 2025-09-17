@@ -35,10 +35,10 @@
   width: 1280px;
   height: 840px;
 }
-.swiper {
+.style .swiper {
   width: 100%;
 }
-.swiper-slide {
+.style .swiper-slide {
   background-position: center;
   background-size: cover;
   width: 660px;
@@ -47,18 +47,18 @@
   transition: filter 0.3s ease; /* плавное включение/выключение blur */
   filter: blur(10px);
 }
-.swiper-slide-active {
+.style .swiper-slide-active {
   filter: blur(0);
 }
 
-.swiper-slide img {
+.style .swiper-slide img {
   display: block;
   width: 100%;
 }
-.swiper-pagination {
+.style .swiper-pagination {
   margin-top: 20px;
 }
-.swiper-pagination-bullet {
+.style .swiper-pagination-bullet {
   margin: 0 20px !important;
   width: 60px; /* было 8px — увеличиваем */
   height: 60px; /* круглый вид */
@@ -67,19 +67,176 @@
   transition: all 0.3s ease;
 }
 /* Первая точка — зелёная */
-.swiper-pagination-bullet:nth-child(1) {
+.style .swiper-pagination-bullet:nth-child(1) {
   background: #d8b74b; /* зелёный */
 }
 
 /* Вторая точка — жёлтая */
-.swiper-pagination-bullet:nth-child(2) {
+.style .swiper-pagination-bullet:nth-child(2) {
   background: #94915b; /* жёлтый */
 }
 
 /* Третья точка — красная */
-.swiper-pagination-bullet:nth-child(3) {
+.style .swiper-pagination-bullet:nth-child(3) {
   background: #883d39; /* красный */
 }
-.style__slider .text-1 {
+.style .style__slider .text-1 {
   padding-top: 16px;
+}
+/* presents */
+.presents {
+}
+.presents__slider {
+  padding-top: 156px;
+  padding-bottom: 80px;
+}
+.presents__card {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 24px;
+  width: 1080px;
+  height: 480px;
+}
+.presents__card p {
+  margin-top: 178px;
+  margin-left: 84px;
+  max-width: 372px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 131%;
+  color: #3b3b3b;
+}
+.card-1 {
+  background: linear-gradient(180deg, #d2cdc6 0%, #f8bf93 100%);
+}
+.card-2 {
+  background: linear-gradient(180deg, #d2cdc6 0%, #f2ebe3 100%);
+}
+.card-3 {
+  background: linear-gradient(180deg, #d2cdc6 0%, #f2ebe3 100%);
+}
+.presents .swiper {
+  width: 100%;
+  height: 100%;
+}
+.presents .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #444; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.presents .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* details */
+.details {
+}
+.title-1 {
+  padding-top: 80px;
+}
+.text-1 {
+  padding-top: 17px;
+}
+.details__flex {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding-bottom: 161px;
+}
+/* dreamlike */
+.dreamlike .container {
+  background: url(../../img/Feature_Image.png);
+  width: 1280px;
+  height: 894px;
+}
+.dreamlike .title-1 {
+  font-size: 86px;
+  line-height: 140%;
+  color: #fff;
+}
+.dreamlike .text-1 {
+  padding-top: 22px;
+  font-size: 24px;
+  color: #fff;
+  padding-bottom: 27px;
+}
+.dreamlike a {
+  display: block;
+  margin: 0 auto;
+  border-radius: 24px;
+  padding: 10px 32px;
+  width: 132px;
+  height: 44px;
+  background: #f5f5f5;
+}
+/* footer */
+.footer .container {
+  background: linear-gradient(180deg, #f5f5f5 0%, #d2cdc6 100%);
+}
+.footer .title-1 {
+  font-size: 42px;
+  text-transform: capitalize;
+}
+.footer .text-1 {
+  margin: 0 auto;
+  max-width: 644px;
+  font-size: 20px;
+}
+.footer__btn-flex {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 19px;
+}
+#aura {
+  border-radius: 24px;
+  padding: 10px 32px;
+  width: 144px;
+  height: 44px;
+  background: #f5f5f5;
+}
+#flow {
+  border-radius: 24px;
+  padding: 10px 32px;
+  width: 112px;
+  height: 44px;
+  background: #f5f5f5;
+}
+hr {
+  margin-top: 45px;
+  height: 2px;
+}
+.footer__flex {
+  margin: 0 auto;
+  max-width: 1118px;
+  padding-top: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__flex .text-1 {
+  padding-top: 0;
+  font-size: 16px;
+  line-height: 312%;
+  text-align: right;
+}
+.footer__flex-copyright-flex {
+  display: flex;
+  gap: 13px;
+}
+.footer__flex-copyright-flex-logo_flex {
+  padding-top: 10px;
+  display: flex;
+  gap: 16px;
+}
+.footer__flex-copyright-flex-logo_flex img {
+  width: 26px;
+  height: 26px;
 }

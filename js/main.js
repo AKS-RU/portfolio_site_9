@@ -16,3 +16,4 @@ const swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+var swiper2 = new Swiper(".mySwiper2", {});
