@@ -16,4 +16,13 @@ const swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
-var swiper2 = new Swiper(".mySwiper2", {});
+
+let swiper2 = new Swiper(".mySwiper2", {});
+
+let SwiperTechSpecs = new Swiper(".SwiperTechSpecs", {
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
