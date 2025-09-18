@@ -15,14 +15,20 @@
   transform: translateX(-50%);
   z-index: 3;
 }
-.header__tittle h2 {
+h1 span {
+  background: linear-gradient(0deg, #daccbc 0%, #afa497 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* .header__tittle h2 {
   position: absolute;
   top: 55%;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
   z-index: 1;
-}
+} */
 /* style */
 .style .title-1 {
   padding-top: 97px;
