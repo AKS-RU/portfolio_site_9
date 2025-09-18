@@ -26,3 +26,21 @@ let SwiperTechSpecs = new Swiper(".SwiperTechSpecs", {
     clickable: true,
   },
 });
+
+// Находим элементы
+const burger = document.getElementById("burger");
+const navMenu = document.querySelector(".header__title-flex");
+
+// Переключаем класс .active при клике
+burger.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+  burger.classList.toggle("active"); // можно использовать для анимации бургера
+});
+
+// Закрытие меню при клике на ссылку
+document.querySelectorAll(".header__title-flex a").forEach((link) => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+    burger.classList.remove("active");
+  });
+});
