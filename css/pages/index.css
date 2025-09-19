@@ -41,7 +41,7 @@ h1 span {
 .style .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 660px;
+  max-width: 660px;
   height: 774px;
   margin: 0 40px;
   transition: filter 0.3s ease; /* плавное включение/выключение blur */
@@ -195,7 +195,7 @@ h1 span {
     padding-bottom: 20px;
   }
   .header__tittle-image {
-    width: 70%;
+    width: 84%;
   }
 }
 @media screen and (max-width: 890px) {
@@ -233,80 +233,97 @@ h1 span {
     object-fit: cover;
   }
 }
+@media screen and (max-width: 818px) {
+  .details .desktop {
+    display: none;
+  }
+  .details_slider.mobile {
+    padding-top: 81px;
+    display: flex !important;
+    padding-bottom: 78px;
+  }
+  .details_slider img {
+    margin: 0 auto;
+    width: 87%;
+  }
+}
 @media screen and (max-width: 768px) {
   .style .title-1 {
     padding-top: 50px;
     margin: 0 auto;
     max-width: 400px;
   }
+
   .presents__slider {
-    padding-top: 100px;
+    padding-top: 67px;
     padding-bottom: 50px;
   }
   .details .title-1 {
-    padding-top: 50px;
+    padding-top: 11px;
   }
   .details__flex {
     padding-bottom: 100px;
   }
 }
 @media screen and (max-width: 576px) {
-  .header__tittle {
-    display: none;
+  .style__slider {
+    padding-top: 11px;
+    max-width: 576px;
+    height: 100%;
   }
-  .style {
-    display: none;
+  .style .swiper-slide {
+    max-width: 660px;
+    height: 524px;
   }
-  .presents {
-    display: none;
+  .style .swiper-slide img {
+    padding-top: 22px;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
   }
-  .details {
-    display: none;
+  .style .swiper-pagination {
+    margin-top: 20px;
   }
-  .dreamlike {
-    display: none;
+  .style .swiper-pagination-bullet {
+    margin: 0 13px !important;
+    width: 40px; /* было 8px — увеличиваем */
+    height: 40px; /* круглый вид */
   }
-  .footer {
-    display: none;
+  .style .style__slider .text-1 {
+    padding-top: 9px;
   }
-}
-@media screen and (max-width: 420px) {
-  .header__tittle {
-    display: none;
+  .dreamlike .title-1 {
+    padding-top: 44px;
+    font-size: 60px;
+    line-height: 133%;
   }
-  .style {
-    display: none;
-  }
-  .presents {
-    display: none;
-  }
-  .details {
-    display: none;
-  }
-  .dreamlike {
-    display: none;
-  }
-  .footer {
-    display: none;
+  .dreamlike .container {
+    background: url(../../img/FeatureMobile.webp);
+    max-width: 1280px;
+    min-height: 803px;
+    background-size: cover;
+    background-position: center;
   }
 }
 @media screen and (max-width: 376px) {
-  .header__tittle {
-    display: none;
+  .style .swiper-slide {
+    max-width: 660px;
+    height: 395px;
   }
-  .style {
-    display: none;
+  .dreamlike .title-1 {
+    font-size: 50px;
+    line-height: 133%;
   }
   .presents {
-    display: none;
+    display: block;
   }
   .details {
-    display: none;
+    display: block;
   }
   .dreamlike {
-    display: none;
+    display: block;
   }
   .footer {
-    display: none;
+    display: block;
   }
 }

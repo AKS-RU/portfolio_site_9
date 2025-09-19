@@ -18,6 +18,7 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 let swiper2 = new Swiper(".mySwiper2", {});
+let swiper3 = new Swiper(".mySwiper3", {});
 
 let SwiperTechSpecs = new Swiper(".SwiperTechSpecs", {
   spaceBetween: 30,

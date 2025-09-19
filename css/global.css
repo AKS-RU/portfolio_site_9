@@ -183,6 +183,11 @@ h1 {
   h1 {
     font-size: 98px;
   }
+  .header__flex {
+    padding: 27px 12px 0;
+    display: flex;
+    justify-content: space-between;
+  }
   .burger {
     display: flex; /* было display: none — теперь видим */
   }
@@ -224,17 +229,51 @@ h1 {
     border-radius: 0;
     background: #f5f5f5;
   }
-  .footer__flex {
-    justify-content: center;
+  .footer__flex-copyright-flex {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .footer__flex .desktop {
     display: none;
   }
 }
 @media screen and (max-width: 576px) {
-}
-@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 60px;
+    line-height: 94%;
+  }
+  .title-1 {
+    font-size: 42px;
+  }
+  .text-1 {
+    font-size: 18px;
+  }
+  .footer .title-1,
+  .footer .text-1 {
+    max-width: 360px;
+  }
+  .footer .title-1 {
+    padding-top: 39px;
+    margin: 0 auto;
+    padding-bottom: 4px;
+  }
+  .footer .text-1 {
+    padding-top: 0;
+  }
+  .footer__flex .text-1 {
+    padding-top: 0;
+    white-space: nowrap;
+  }
+  .footer__flex-copyright-flex {
+    gap: 0;
+  }
 }
 @media screen and (max-width: 376px) {
+  h1 {
+    font-size: 50px;
+    line-height: 94%;
+  }
+  .footer__flex-copyright-flex .text-1 {
+    font-size: 15px;
+  }
 }
